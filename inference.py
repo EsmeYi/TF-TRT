@@ -121,9 +121,9 @@ class Detection(object):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Run object detection evaluation on VOC2007 dataset using TensorFlow.')
-    parser.add_argument('-mp', '--pb_model_path', type = str, required=True)
+    parser.add_argument('-i', '--pb_model_path', type = str, required=True)
     parser.add_argument('-b', '--batch_size', type = int, default=32)
-    parser.add_argument('-voc', '--voc_dir', type = str, default='./VOCdevkit/VOC2007')
+    parser.add_argument('-d', '--voc_dir', type = str, default='./VOCdevkit/VOC2007')
 
     args = parser.parse_args()
     pb_model_path = args.pb_model_path
